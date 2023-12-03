@@ -28,8 +28,6 @@ public class GroupsActivity extends AppCompatActivity {
         groups = new ArrayList<>();
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, groups);
 
-        ListView listView = findViewById(R.id.listViewGroups);
-        listView.setAdapter(adapter);
 
         Button btnCreateGroup = findViewById(R.id.btnCreateGroup);
         btnCreateGroup.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +51,7 @@ public class GroupsActivity extends AppCompatActivity {
         builder.setView(input);
 
         // Set up the buttons
-        builder.setPositiveButton("Create", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Create Group", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 String groupName = input.getText().toString();

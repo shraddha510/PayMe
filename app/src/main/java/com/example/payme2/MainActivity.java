@@ -10,6 +10,8 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText usernameEditText;
@@ -31,11 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
 
                 // Perform login logic
-                if (isValidLogin(username, password)) {
-                    Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Invalid Credentials. Try again.", Toast.LENGTH_SHORT).show();
-                }
+                isValidLogin(username, password);
             }
         });
 
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         finish(); // Optional: Finish the current activity to prevent going back to the login page
     }
 
-    private boolean isValidLogin(String username, String password) {
+    private void isValidLogin(String username, String password) {
         // Your login validation logic (e.g., check against stored user data)
         // For simplicity, you might use SharedPreferences for user data storage
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
@@ -73,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(MainActivity.this, "Invalid Credentials. Try again.", Toast.LENGTH_SHORT).show();
         }
-
-        return isValid;
     }
 
     private void registerUser(String username, String password) {
