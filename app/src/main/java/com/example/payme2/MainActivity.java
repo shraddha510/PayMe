@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
-                // Perform login logic
+                // login logic
                 isValidLogin(username, password);
             }
         });
 
-        // For user registration
+        // user registration
         Button registerButton = findViewById(R.id.registerButton);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
-                // Perform user registration logic
+                // user registration logic
                 registerUser(username, password);
             }
         });
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void isValidLogin(String username, String password) {
-        // Your login validation logic
+        // login validation logic
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
         String storedUsername = preferences.getString("username", "");
         String storedPassword = preferences.getString("password", "");
