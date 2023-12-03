@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add the title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payme_splitting_costs_made_easy"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+    />
+
+    <!-- Add a line to separate the title and member names -->
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+    />
+
+    <!-- Add the ListView for member names -->
+    <ListView
+        android:id="@+id/listViewGroupMembers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+    />
+
+</RelativeLayout>

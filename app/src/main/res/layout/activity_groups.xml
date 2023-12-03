@@ -16,23 +16,30 @@
         android:text="Create Group"
         android:onClick="onCreateGroupClick" />
 
-
-    <!-- See Groups Button -->
-    <Button
-        android:id="@+id/btnSeeGroups"
-        android:layout_width="wrap_content"
+    <!-- Container for dynamically added buttons -->
+    <LinearLayout
+        android:id="@+id/layoutGroupButtons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnCreateGroup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="See Groups"
-        android:onClick="onSeeGroupsClick" />
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_between_buttons" />
 
+    <!-- List View -->
     <ListView
         android:id="@+id/listViewGroups"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/btnSeeGroups"
+        android:layout_below="@id/layoutGroupButtons"
         android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:visibility="gone"
+    />
+
 
 </RelativeLayout>

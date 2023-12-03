@@ -6,4 +6,6 @@
     <string name="title_activity_groups">GroupsActivity</string>
     <string name="create_group">Create Group</string>
     <string name="register">Register</string>
+    <string name="payme_splitting_costs_made_easy">PayMe: Splitting Costs Made Easy</string>
+    <string name="payme_splitting_costs_made_easy1">PayMe: Splitting Costs Made Easy</string>
 </resources>
