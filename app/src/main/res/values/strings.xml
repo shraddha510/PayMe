@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PayMe2</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="title_activity_groups">GroupsActivity</string>
+    <string name="create_group">Create Group</string>
+</resources>
