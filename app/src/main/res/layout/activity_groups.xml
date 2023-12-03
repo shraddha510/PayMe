@@ -11,8 +11,28 @@
         android:id="@+id/btnCreateGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
         android:text="Create Group"
         android:onClick="onCreateGroupClick" />
+
+
+    <!-- See Groups Button -->
+    <Button
+        android:id="@+id/btnSeeGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCreateGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="See Groups"
+        android:onClick="onSeeGroupsClick" />
+
+    <ListView
+        android:id="@+id/listViewGroups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnSeeGroups"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>

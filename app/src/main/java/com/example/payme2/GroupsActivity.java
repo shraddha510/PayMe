@@ -2,6 +2,7 @@ package com.example.payme2;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -9,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.util.Log;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +31,8 @@ public class GroupsActivity extends AppCompatActivity {
         groups = new ArrayList<>();
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, groups);
 
+        ListView listView = findViewById(R.id.listViewGroups);
+        listView.setAdapter(adapter);
 
         Button btnCreateGroup = findViewById(R.id.btnCreateGroup);
         btnCreateGroup.setOnClickListener(new View.OnClickListener() {
@@ -36,11 +41,29 @@ public class GroupsActivity extends AppCompatActivity {
                 showCreateGroupDialog();
             }
         });
+
+        Button btnSeeGroups = findViewById(R.id.btnSeeGroups);
+        btnSeeGroups.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToGroupListActivity();
+            }
+        });
     }
 
     public void onCreateGroupClick(View view) {
+        Log.d("GroupsActivity", "Create Group button clicked");
+
         showCreateGroupDialog();
     }
+    public void onSeeGroupsClick(View view) {
+        Log.d("GroupsActivity", "See Groups button clicked");
+
+        // Implement the logic to navigate to the page listing the groups
+        Intent intent = new Intent(this, GroupListActivity.class);
+        startActivity(intent);
+    }
+
 
     private void showCreateGroupDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -77,5 +100,11 @@ public class GroupsActivity extends AppCompatActivity {
         groups.add(groupName);
         adapter.notifyDataSetChanged();
         Toast.makeText(this, "Group created: " + groupName, Toast.LENGTH_SHORT).show();
+    }
+
+    private void navigateToGroupListActivity() {
+        Intent intent = new Intent(GroupsActivity.this, GroupListActivity.class);
+        intent.putStringArrayListExtra("groups", new ArrayList<>(groups));
+        startActivity(intent);
     }
 }
