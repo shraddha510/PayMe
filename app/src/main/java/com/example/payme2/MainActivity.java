@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private void navigateToGroupsActivity() {
         Intent intent = new Intent(MainActivity.this, GroupsActivity.class);
         startActivity(intent);
-        finish(); // Optional: Finish the current activity to prevent going back to the login page
+        finish();
     }
 
     private void isValidLogin(String username, String password) {
