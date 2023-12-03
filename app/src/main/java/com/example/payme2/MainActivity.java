@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // For user registration (example)
+        // For user registration
         Button registerButton = findViewById(R.id.registerButton);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void registerUser(String username, String password) {
-        // Your user registration logic (e.g., store user data)
-        // For simplicity, you might use SharedPreferences for user data storage
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("username", username);
