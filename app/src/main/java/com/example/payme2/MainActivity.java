@@ -83,5 +83,6 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(MainActivity.this, "User Registered!", Toast.LENGTH_SHORT).show();
+        navigateToGroupsActivity();
     }
 }
