@@ -54,12 +54,11 @@ public class MainActivity extends AppCompatActivity {
     private void navigateToGroupsActivity() {
         Intent intent = new Intent(MainActivity.this, GroupsActivity.class);
         startActivity(intent);
-        finish(); // Optional: Finish the current activity to prevent going back to the login page
+        finish();
     }
 
     private void isValidLogin(String username, String password) {
-        // Your login validation logic (e.g., check against stored user data)
-        // For simplicity, you might use SharedPreferences for user data storage
+        // Your login validation logic
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
         String storedUsername = preferences.getString("username", "");
         String storedPassword = preferences.getString("password", "");
