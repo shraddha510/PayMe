@@ -59,7 +59,6 @@ public class GroupsActivity extends AppCompatActivity {
     public void onSeeGroupsClick(View view) {
         Log.d("GroupsActivity", "See Groups button clicked");
 
-        // Implement the logic to navigate to the page listing the groups
         Intent intent = new Intent(this, GroupListActivity.class);
         startActivity(intent);
     }

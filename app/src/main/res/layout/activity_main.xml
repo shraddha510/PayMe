@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:autofillHints="" />
 
     <!-- Password EditText -->
     <EditText
@@ -21,7 +22,8 @@
         android:layout_below="@id/usernameEditText"
         android:layout_marginTop="16dp"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
     <!-- Login Button -->
     <Button
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/loginButton"
         android:layout_marginTop="16dp"
-        android:text="Register" />
+        android:text="@string/register" />
 
 
 </RelativeLayout>
