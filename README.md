@@ -2,9 +2,9 @@
 Group 6 - CS 3354
 
 
-Hello! This is Group 6's project for CS 3354, and we wanted to explain our GitHub repo. We have to call the folder PayMe2 temporarily, since there were some issues with the other folder. We apologize for the descrepancy!
+Hello! This is Group 6's project for CS 3354, and here we explain our application and navigation around our GitHub repo. We have to call the folder "PayMe2" temporarily, since there were some issues with the other folder. We apologize for the descrepancy.
 
-PayMe is a user-friendly Android app designed to simplify the process of splitting costs among group members. Whether you're on a trip, organizing an event, or managing shared expenses, PayMe2 makes it easy to track and settle financial transactions within your group.
+PayMe is a user-friendly Android app designed to simplify the process of splitting costs among group members. Whether you're on a trip, organizing an event, or managing shared expenses, PayMe makes it easy to track and settle financial transactions within your group.
 
 Key Features
 --> Create and Manage Groups: Set up groups for various purposes, such as travel, events, or shared living expenses.
