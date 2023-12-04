@@ -45,7 +45,7 @@ These can be found in the following folder paths:
 
 Activity files:
 app/src/main/java/com/example/payme2/ui/theme
-[https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/java/com/example/payme2/ui/theme
+[https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/java/com/example/payme2/
 ](https://github.com/shraddha510/PayMe2/tree/main/app/src/main/java/com/example/payme2)
 XML files:
 app/src/main/res/layout
