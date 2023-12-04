@@ -21,15 +21,15 @@ Key Features
 
 The files that we explicitly worked on are:
 
--MainActivity
+-MainActivity.java
 
--User
+-User.java
 
--GroupMembersActivity
+-GroupMembersActivity.java
 
--GroupsActivity
+-GroupsActivity.java
 
--GroupListActivity
+-GroupListActivity.java
 
 -activity_group_list.xml
 
