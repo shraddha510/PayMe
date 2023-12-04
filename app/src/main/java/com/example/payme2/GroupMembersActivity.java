@@ -34,14 +34,14 @@ public class GroupMembersActivity extends AppCompatActivity {
             String groupName = intent.getStringExtra("groupName");
             setTitle(groupName + " Members");
 
-            // List of members (including the new member "Alan")
+            // List of members
             List<String> members = new ArrayList<>();
             members.add("Vlad");
             members.add("Nyha");
             members.add("David");
             members.add("Yang");
             members.add("Shraddha");
-            members.add("Alan"); // New member
+            members.add("Alan");
 
             // Hardcoded amounts for demonstration
             List<Integer> owedAmounts = new ArrayList<>();
@@ -172,7 +172,7 @@ public class GroupMembersActivity extends AppCompatActivity {
             owedAmounts.set(i, currentOwedAmount + (int) amountPerMember);
         }
 
-        // Update the UI, e.g., refresh the display
+        // Update the UI
         updateAdapter();
     }
 }

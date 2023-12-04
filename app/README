@@ -1,0 +1,29 @@
+Hello! This is Group 6's project for CS 3354, and we wanted to explain our GitHub repo.
+
+We completed this project in Android Studio, so many of these files were auto-generated in our project folder.
+
+The files that we worked on are:
+
+-MainActivity
+-User
+-GroupMembersActivity
+-GroupsActivity
+-GroupListActivity
+-activity_group_list.xml
+-activity_group_members.xml
+-activity_group.xml
+-activity_main.xml
+-dimens.xml
+
+These can be found in the following folder paths:
+
+Activity files:
+app/src/main/java/com/example/payme2/ui/theme
+https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/java/com/example/payme2/ui/theme
+
+XML files:
+app/src/main/res/layout
+https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/res/layout
+
+The Activity files handle the java UI and app functionality, while the XML files handle the layout and display features.
+

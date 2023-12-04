@@ -55,7 +55,6 @@ public class GroupsActivity extends AppCompatActivity {
         // Dynamically add buttons for existing groups
         addGroupButtons();
 
-        // Inside your onCreate method or wherever appropriate
         TextView textViewGroupName = findViewById(R.id.textViewGroupName);
         textViewGroupName.setVisibility(View.GONE);
 
