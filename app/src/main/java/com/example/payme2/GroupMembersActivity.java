@@ -161,6 +161,7 @@ public class GroupMembersActivity extends AppCompatActivity {
         builder.show();
     }
 
+    //Add a cost, and it will be equally split up amongst all other members of group
     private void addCostAndSplit(double cost) {
         // Calculate the amount to be added to each member
         int numberOfMembers = members.size();

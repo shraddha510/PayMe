@@ -75,7 +75,6 @@ public class GroupsActivity extends AppCompatActivity {
                 }
             });
 
-            // Set layout parameters
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
@@ -83,7 +82,6 @@ public class GroupsActivity extends AppCompatActivity {
             params.setMargins(0, calculateTopMarginForNewButton(), 0, 0);
             button.setLayoutParams(params);
 
-            // Add button to the layout
             layout.addView(button);
         }
     }
@@ -120,7 +118,6 @@ public class GroupsActivity extends AppCompatActivity {
     }
 
     public void onCreateGroupClick(View view) {
-        // This method will be called when the "Create Group" button is clicked
         Log.d("GroupsActivity", "Create Group button clicked");
 
         showCreateGroupDialog();
