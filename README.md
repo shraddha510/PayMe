@@ -17,6 +17,7 @@ Key Features
 
 --> Intuitive User Interface: Enjoy a clean and intuitive user interface for a smooth user experience.
 
+
 *** We completed this project in Android Studio, so many of these files were auto-generated in our project folder. ***
 
 The files that we explicitly worked on are:
@@ -41,16 +42,19 @@ The files that we explicitly worked on are:
 
 -dimens.xml
 
+
 These can be found in the following folder paths:
 
 Activity files:
 app/src/main/java/com/example/payme2/ui/theme
 [https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/java/com/example/payme2/
 ](https://github.com/shraddha510/PayMe2/tree/main/app/src/main/java/com/example/payme2)
+
 XML files:
 app/src/main/res/layout
 [https://github.com/shraddha510/PayMe/blob/4266cc2457dcccac7b94258e87fd951327603b8d/app/src/main/res/layout
 ](https://github.com/shraddha510/PayMe2/tree/main/app/src/main/res/layout)
 The Activity files handle the java UI and app functionality, while the XML files handle the layout and display features.
+
 
 Thank you for exploring our app!
