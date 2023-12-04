@@ -22,14 +22,23 @@ Key Features
 The files that we explicitly worked on are:
 
 -MainActivity
+
 -User
+
 -GroupMembersActivity
+
 -GroupsActivity
+
 -GroupListActivity
+
 -activity_group_list.xml
+
 -activity_group_members.xml
+
 -activity_group.xml
+
 -activity_main.xml
+
 -dimens.xml
 
 These can be found in the following folder paths:
